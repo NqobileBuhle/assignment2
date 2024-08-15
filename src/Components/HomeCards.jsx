@@ -15,10 +15,10 @@ const HomeCards = () => {
   return (
     <div className='flex items-center flex-col'>
         <Card>
-        <h2 className="py-10 flex items-center font-semibold rp-300 mx-auto  ">
+        {/* <h2 className="py-10 flex items-center font-semibold rp-300 mx-auto  ">
             LATEST MOVIES
-        </h2>
-        <div className='flex-col flex gap-20 justify-center'>
+        </h2> */}
+        {/* <div className='flex-col flex gap-20 justify-center'>
          <article className="flex flex-wrap gap-10 grid grid-cols-4">
            <div className="w-[200px]">
              <img className="w-64 h-55 object-cover" src={wed} alt="" />
@@ -92,7 +92,7 @@ const HomeCards = () => {
                More
              </button>
            </div>
-       </div>
+       </div> */}
         </Card>
       
     </div>
