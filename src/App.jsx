@@ -1,58 +1,27 @@
-import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-} from "react-router-dom";
-import Home from "./Components/Home";
-import Movies from "./Components/Movies";
-import Add from "./Components/Add";
-import NotFoundP from "./Components/NotFoundP";
-import "./App.css";
-import MainLayout from "./Layout/MainLayout";
-import Series from "./Components/Series";
-import MoviesInfo, { movieLoader } from "./Components/MoviesInfo";
-import Edit from "./Components/Edit";
+import React from 'react'
+import MainLayout from './Layout/MainLayout'
+import HomePage from './Pages/HomePage'
+import SeriesPage from './Pages/SeriesPage'
 
-function App() {
-  //Delete Movie
-  const deleteMovie = async (id) => {
-    const res = await fetch(`/api/movies/${id}`, {
-      method: "DELETE",
-    });
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import MoviesPage from './Pages/MoviesPage'
 
-    if (res.ok) {
-      console.log(`Movie with id: ${id} deleted successfully.`);
-      return true;
-    } else {
-      console.error(`Failed to delete movie with id: ${id}`);
-      return false;
-    }
-  };
 
-  const router = createBrowserRouter(
+const App = () => {
+
+  const router= createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<Home />} />
-        <Route path="movies" element={<Movies />} />
-        <Route path="/add-new" element={<Add />} />
-        <Route path="/series" element={<Series />} />
-        <Route
-          path="/movies/:id"
-          element={<MoviesInfo deleteMovie={deleteMovie} />}
-          loader={movieLoader}
-        />
-        <Route
-          path="/edit-movie/:id"
-          element={<Edit />}
-          loader={movieLoader}
-        />
-
-        
-        <Route path="*" element={<NotFoundP />} />
-      </Route>
+       <Route path='/' element={<MainLayout/>}>
+        <Route path='/' element={<HomePage/>}></Route> 
+        <Route path='/movies' element={<MoviesPage/>}></Route>   
+        <Route path='/series' element={<SeriesPage/>}></Route>   
+       </Route>
     )
-  );
-  return <RouterProvider router={router} />;
+  )
+  return<RouterProvider router={router}/>
+  
+      
 }
-export default App;
+
+export default App
+

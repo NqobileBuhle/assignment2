@@ -1,16 +1,13 @@
 import React from 'react'
-import Series from '../Components/Series'
-import Movies from '../Components/Movies'
-import Card from './Card'
-import HomeCards from '../Components/HomeCards'
+
+import Navbar from './Navbar'
 
 const Home = () => {
   return (
     <>
-       <Movies/>
-    <Series/>
-      <Card />
-      <HomeCards/>
+    <Navbar/>
+      
+      
       </>
       
  
