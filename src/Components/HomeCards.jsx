@@ -1,15 +1,15 @@
 
 import Card from './Card'
 import React from 'react'
-import bg from '../assets/onlyMurder.png'
-import wed from '../assets/wednesday.jpeg'
-import carbon from '../assets/carbon.jpeg'
-import dark from '../assets/dark.jpeg'
-import fallout from '../assets/fallout.png'
-import loki from '../assets/loki.jpeg'
-import morty from '../assets/morty.png'
-import last from '../assets/thelast.jpeg'
-import streams from "../streams.json";
+// import bg from '../assets/onlyMurder.png'
+// import wed from '../assets/wednesday.jpeg'
+// import carbon from '../assets/carbon.jpeg'
+// import dark from '../assets/dark.jpeg'
+// import fallout from '../assets/fallout.png'
+// import loki from '../assets/loki.jpeg'
+// import morty from '../assets/morty.png'
+// import last from '../assets/thelast.jpeg'
+// import streams from "../streams.json";
 
 const HomeCards = () => {
   return (
