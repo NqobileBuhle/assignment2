@@ -2,8 +2,18 @@
 
   import React from 'react'
   import bg from '../assets/onlyMurder.png'
+  import { useLocation } from 'react-router-dom';
   
   const Navbar = () => {
+    const location = useLocation();
+
+  // Map paths to their respective titles
+  const titles = {
+    '/movies': 'LATEST MOVIES',
+    '/series': 'LATEST SERIES',
+    '/add': 'ADD MOVIE/SERIES',
+    '/details': '',
+  };
     return (
       <div>
         <div className='bg-cover bg center bg-no-repeat h-96'style={{backgroundImage:`url(${bg})`}}>
