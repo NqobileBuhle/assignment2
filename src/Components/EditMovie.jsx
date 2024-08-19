@@ -37,7 +37,7 @@ const EditMovie = () => {
   };
 
   return (
-    <div className="flex justify-center p-11 bg-gray-100">
+    <div className="flex justify-center  ml-auto p-11 bg-gray-100">
       <form onSubmit={handleSave} className="p-8 space-y-4 bg-white shadow-md rounded">
         <div>
           <label className="block text-sm font-medium text-gray-700">Movie/Series Name</label>

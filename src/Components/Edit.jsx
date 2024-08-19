@@ -30,7 +30,7 @@ const Edit = () => {
   const handleUpdate = (e) => {
     e.preventDefault();
     // Implement update functionality
-    alert('Update functionality is not yet implemented');
+    alert('Update not implemented');
     navigate(`/details/${id}`);
   };
 
@@ -50,7 +50,7 @@ const Edit = () => {
   if (!item) return <div>Loading...</div>;
 
   return (
-    <section className="p-8">
+    <section className="p-2">
       <h2 className="text-2xl font-semibold mb-4">Edit {item.title}</h2>
       <form onSubmit={handleUpdate} className="space-y-4">
         <div>

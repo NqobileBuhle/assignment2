@@ -31,29 +31,35 @@ function MoviesPage() {
   };
   
   return (
-    <div className="p-8">
-      <img src={movie.image} alt={movie.title} className="h-96 w-64 object-cover mb-4" />
-      <h1 className="text-4xl mb-4">{movie.title}</h1>
-      <p className="text-lg mb-4">{movie.description}</p>
-      <p><strong>Year:</strong> {movie.year}</p>
-      <p><strong>Country:</strong> {movie.country}</p>
-      <div className="mt-4 gap-10">
-        <button 
-          onClick={handleEdit}
-          className="bg-blue-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-full mr-2">
-          Edit
-        </button>
-        <button 
-          onClick={handleDelete}
-          className="bg-blue-500 hover:bg-red-600 text-white py-2 px-4 rounded-full">
-          Delete
-        </button>
+    <div className="flex justify-end items-center p-8">
+      <div className="flex flex-row items-start space-x-8 ml-auto">
+        <img src={movie.image} alt={movie.title} className="h-96 w-64 object-cover mb-4" />
+        <div className="flex flex-col">
+          <h1 className="text-4xl mb-4">{movie.title}</h1>
+          <p className="text-lg mb-4">{movie.description}</p>
+          <p className="text-lg mb-2"><strong>Year:</strong> {movie.year}</p>
+          <p className="text-lg mb-2"><strong>Country:</strong> {movie.country}</p>
+          <div className="mt-4 flex space-x-4">
+            <button
+              onClick={handleEdit}
+              className="bg-purple-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full  border-blue-500">
+              Edit
+            </button>
+            <button
+              onClick={handleDelete}
+              className="bg-purple-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full">
+              Delete
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
 export default MoviesPage;
+
+
 
 
 

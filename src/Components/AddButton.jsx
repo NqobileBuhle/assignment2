@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Add from '../Components/Add'
 
 const AddButton = () => {
   return (
@@ -9,6 +10,7 @@ const AddButton = () => {
           ADD 
         </button>
       </Link>
+
     </div>
   );
 };

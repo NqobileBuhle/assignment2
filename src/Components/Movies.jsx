@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link component
+import { Link } from 'react-router-dom';
 import streams from '../streams.json';
 
 const Movies = () => {
@@ -13,10 +13,10 @@ const Movies = () => {
         </h2>
         <div className='flex-col flex gap-20 justify-center'>
           <article className="flex flex-wrap gap-10 grid grid-cols-4">
-            {movies.map((streams) => (
-              <div key={streams.id} className="w-[200px]">
-                <Link to={`/movies/${streams.id}`}>
-                  <img className="w-64 h-55 object-cover" src={streams.image} alt={streams.title} />
+            {movies.map((movie) => (
+              <div key={movie.id} className="w-[200px]">
+                <Link to={`/movies/${movie.id}`}>
+                  <img className="w-64 h-55 object-cover" src={movie.image} alt={movie.title} />
                 </Link>
               </div>
             ))}
@@ -33,6 +33,7 @@ const Movies = () => {
 }
 
 export default Movies;
+
 
 
 

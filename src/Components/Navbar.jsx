@@ -12,6 +12,7 @@ const Navbar = () => {
     '/movies': 'LATEST MOVIES',
     '/series': 'LATEST SERIES',
     '/add': 'ADD MOVIE/SERIES',
+    '/editmovie':'EDIT MOVIE'
     
   };
 
@@ -31,7 +32,7 @@ const Navbar = () => {
             SUBSCRIBE
           </button>
         </nav>
-        <h1 className="text-center text-white text-3xl mt-4">{title}</h1>
+        <h1 className="text-center text-white text-3xl mt-6">{title}</h1>
       </div>
     </div>
   );
