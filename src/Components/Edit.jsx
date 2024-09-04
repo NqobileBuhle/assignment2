@@ -30,6 +30,18 @@ const Edit = () => {
   const handleUpdate = (e) => {
     e.preventDefault();
     // Implement update functionality
+    const updatedItem = {
+      id: parseInt(id),
+      title,
+      description,
+      country,
+      year,
+      type,
+      image,
+    };
+    // Assuming you have a way to update the data source
+    // e.g., a function or API call to save the updated item
+    console.log('Updated item:', updatedItem);
     alert('Update not implemented');
     navigate(`/details/${id}`);
   };
@@ -50,7 +62,7 @@ const Edit = () => {
   if (!item) return <div>Loading...</div>;
 
   return (
-    <section className="p-2">
+    <section className="p-2 justify-center items-center">
       <h2 className="text-2xl font-semibold mb-4">Edit {item.title}</h2>
       <form onSubmit={handleUpdate} className="space-y-4">
         <div>

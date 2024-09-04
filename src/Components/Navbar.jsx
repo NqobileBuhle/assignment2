@@ -1,6 +1,6 @@
 
 
-  import React from 'react';
+import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import bg from '../assets/onlyMurder.png';
 
@@ -12,8 +12,7 @@ const Navbar = () => {
     '/movies': 'LATEST MOVIES',
     '/series': 'LATEST SERIES',
     '/add': 'ADD MOVIE/SERIES',
-    '/editmovie':'EDIT MOVIE'
-    
+    '/editmovie': 'EDIT MOVIE'
   };
 
   // Get the title based on the current path
@@ -21,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='bg-cover bg center bg-no-repeat h-96' style={{ backgroundImage: `url(${bg})` }}>
+      <div className='bg-cover bg-center bg-no-repeat h-96' style={{ backgroundImage: `url(${bg})` }}>
         <nav className='flex flex-row items-center justify-between pr-12 pl-10 text-white'>
           <a href='/'><span className='text-blue-500'>Enter-</span>Stream</a>
           <ul className='flex space-x-6 item-center ml-10'>
@@ -39,5 +38,8 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
 
   

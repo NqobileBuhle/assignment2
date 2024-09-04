@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import streams from '../streams.json';
 
-const Movies = () => {
-  const movies = streams.movies || [];
-
+const Movies = ({ movies }) => {
   return (
     <section>
       <div className="flex items-center flex-col">
@@ -12,7 +10,7 @@ const Movies = () => {
           LATEST MOVIES
         </h2>
         <div className='flex-col flex gap-20 justify-center'>
-          <article className="flex flex-wrap gap-10 grid grid-cols-4">
+          <article className=" gap-10 grid grid-cols-4">
             {movies.map((movie) => (
               <div key={movie.id} className="w-[200px]">
                 <Link to={`/movies/${movie.id}`}>
@@ -33,8 +31,3 @@ const Movies = () => {
 }
 
 export default Movies;
-
-
-
-
-

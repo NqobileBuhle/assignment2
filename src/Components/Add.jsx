@@ -48,6 +48,8 @@ function Add({ submitMovies }) {
         className="w-64 m-11 rounded shadow-lg"
       />
 
+      {image && <img src={image} alt="Preview" className="w-64 h-64 object-cover mb-4" />}
+
       <form onSubmit={submitData} className="p-8 space-y-4 bg-white shadow-md rounded">
         <div>
           <label className="block text-sm font-medium text-gray-700">Movie/Series Name</label>
@@ -132,5 +134,6 @@ function Add({ submitMovies }) {
 }
 
 export default Add;
+
 
 

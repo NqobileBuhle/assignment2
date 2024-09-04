@@ -47,20 +47,28 @@ import NotFound from './Components/NotFound';
 import Navbar from './Components/Navbar';
 import AddButton from './Components/AddButton';
 import Add from './Components/Add';
+import Series from './Components/Series'; // Import Series component
+import SeriesPage from './Pages/SeriesPage'; // Import SeriesPage component
 
 const App = () => {
   const [movies, setMovies] = useState(streams.movies);
+  const [series, setSeries] = useState(streams.Series); // Add state for series
 
   return (
     <Router>
       <Navbar />
       <AddButton />
-    
+
       <Routes>
         <Route path="/" element={<Movies movies={movies} setMovies={setMovies} />} />
+        <Route path="/movies" element={<Movies movies={movies} setMovies={setMovies} />} />
         <Route path="/movies/:movieId" element={<MoviesPage movies={movies} setMovies={setMovies} />} />
         <Route path="/edit/:movieId" element={<EditMovie movies={movies} setMovies={setMovies} />} />
-        <Route path='/add' element={<Add submitMovies={(movie) => console.log('New movie:', movie)} />} />
+        <Route path="/add" element={<Add submitMovies={(movie) => console.log('New movie:', movie)} />} />
+
+        <Route path="/series" element={<Series series={series} setSeries={setSeries} />} /> {/* Add route for Series */}
+        <Route path="/series/:seriesId" element={<SeriesPage series={series} setSeries={setSeries} />} /> {/* Add route for SeriesPage */}
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
@@ -68,4 +76,5 @@ const App = () => {
 };
 
 export default App;
+
 

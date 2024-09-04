@@ -5,9 +5,9 @@ import streams from '../streams.json';
 const EditMovie = () => {
   const { movieId } = useParams();
   const navigate = useNavigate();
-  
+
   const movie = streams.movies.find(m => m.id === parseInt(movieId));
-  
+
   // State for movie details
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -29,15 +29,24 @@ const EditMovie = () => {
 
   const handleSave = (e) => {
     e.preventDefault();
+    if (!title || !description || !country || !year || !type) {
+      alert('Please fill in all fields');
+      return;
+    }
+
     const updatedMovie = { id: movie.id, title, description, country, year, type, image };
-    
-    // Update movie in streams (in a real app, use state or API)
+
+    // Implement update functionality
+    // In a real app, you would make an API call or update the state here
     console.log('Updated movie:', updatedMovie);
+    alert('Movie updated successfully');
     navigate(`/movies/${movieId}`);
   };
 
+  if (!movie) return <div>Loading...</div>;
+
   return (
-    <div className="flex justify-center  ml-auto p-11 bg-gray-100">
+    <div className="flex justify-center p-11 bg-gray-100">
       <form onSubmit={handleSave} className="p-8 space-y-4 bg-white shadow-md rounded">
         <div>
           <label className="block text-sm font-medium text-gray-700">Movie/Series Name</label>
@@ -91,6 +100,7 @@ const EditMovie = () => {
             value={image}
             onChange={(e) => setImage(e.target.value)}
           />
+          {image && <img src={image} alt="Preview" className="w-64 h-64 object-cover mt-4" />}
         </div>
 
         <fieldset>
@@ -133,5 +143,3 @@ const EditMovie = () => {
 };
 
 export default EditMovie;
-
-

@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link component
+import { Link } from 'react-router-dom';
 import streams from '../streams.json';
 
-const Series = () => {
-  const Series = streams.Series || [];
-
+const Series = ({ series }) => {
   return (
     <section>
       <div className="flex items-center flex-col">
@@ -12,11 +10,11 @@ const Series = () => {
           LATEST SERIES
         </h2>
         <div className='flex-col flex gap-20 justify-center'>
-          <article className="flex flex-wrap gap-10 grid grid-cols-4">
-            {Series.map((streams) => (
-              <div key={streams.id} className="w-[200px]">
-                <Link to={`/Series/${streams.id}`}>
-                  <img className="w-64 h-55 object-cover" src={streams.image} alt={streams.title} />
+          <article className=" gap-10 grid grid-cols-4">
+            {series.map((series) => (
+              <div key={series.id} className="w-[200px]">
+                <Link to={`/series/${series.id}`}>
+                  <img className="w-64 h-55 object-cover" src={series.image} alt={series.title} />
                 </Link>
               </div>
             ))}
@@ -33,5 +31,4 @@ const Series = () => {
 }
 
 export default Series;
-
 
