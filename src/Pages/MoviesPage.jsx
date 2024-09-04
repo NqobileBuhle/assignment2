@@ -29,7 +29,7 @@ function MoviesPage() {
   };
   
   return (
-    <div className="flex justify-end items-center p-8">
+    <div className="flex justify-end items-center  md:flex-row p-4 md:p-8">
       <div className="flex flex-row items-start space-x-8 ml-auto">
         <img 
           src={movie.image} 
