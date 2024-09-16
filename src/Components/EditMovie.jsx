@@ -37,7 +37,6 @@ const EditMovie = () => {
     const updatedMovie = { id: movie.id, title, description, country, year, type, image };
 
     // Implement update functionality
-    // In a real app, you would make an API call or update the state here
     console.log('Updated movie:', updatedMovie);
     alert('Movie updated successfully');
     navigate(`/movies/${movieId}`);
@@ -46,13 +45,13 @@ const EditMovie = () => {
   if (!movie) return <div>Loading...</div>;
 
   return (
-    <div className="flex justify-center p-11 bg-gray-100">
-      <form onSubmit={handleSave} className="p-8 space-y-4 bg-white shadow-md rounded">
+    <div className="flex justify-center items-center h-screen bg-gray-100">
+      <form onSubmit={handleSave} className="p-8 space-y-4 bg-white shadow-md rounded max-w-md mx-auto w-full">
         <div>
           <label className="block text-sm font-medium text-gray-700">Movie/Series Name</label>
           <input
             type="text"
-            className="border border-gray-300 rounded p-2 w-96 text-sm"
+            className="border border-gray-300 rounded p-2 w-full text-sm"
             placeholder="Enter movie/series name"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -62,7 +61,7 @@ const EditMovie = () => {
         <div>
           <label className="block text-sm font-medium text-gray-700">Description</label>
           <textarea
-            className="border border-gray-300 rounded p-2 w-96 h-20 text-sm"
+            className="border border-gray-300 rounded p-2 w-full h-20 text-sm"
             placeholder="Movie/series description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
@@ -73,7 +72,7 @@ const EditMovie = () => {
           <label className="block text-sm font-medium text-gray-700">Country</label>
           <input
             type="text"
-            className="border border-gray-300 rounded p-2 w-96 text-sm"
+            className="border border-gray-300 rounded p-2 w-full text-sm"
             placeholder="Enter country"
             value={country}
             onChange={(e) => setCountry(e.target.value)}
@@ -84,7 +83,7 @@ const EditMovie = () => {
           <label className="block text-sm font-medium text-gray-700">Year</label>
           <input
             type="text"
-            className="border border-gray-300 rounded p-2 w-96 text-sm"
+            className="border border-gray-300 rounded p-2 w-full text-sm"
             placeholder="Enter year"
             value={year}
             onChange={(e) => setYear(e.target.value)}
@@ -95,12 +94,12 @@ const EditMovie = () => {
           <label className="block text-sm font-medium text-gray-700">Image URL</label>
           <input
             type="text"
-            className="border border-gray-300 rounded p-2 w-96 text-sm"
+            className="border border-gray-300 rounded p-2 w-full text-sm"
             placeholder="Enter image URL"
             value={image}
             onChange={(e) => setImage(e.target.value)}
           />
-          {image && <img src={image} alt="Preview" className="w-64 h-64 object-cover mt-4" />}
+          {image && <img src={image} alt="Preview" className="w-64 h-64 object-cover mt-4 mx-auto" />}
         </div>
 
         <fieldset>

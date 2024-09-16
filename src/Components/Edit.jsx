@@ -66,12 +66,12 @@ const Edit = () => {
       <h2 className="text-2xl font-semibold mb-4">Edit {item.title}</h2>
       <form onSubmit={handleUpdate} className="space-y-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700">Title</label>
+          <label className="block text-sm font-medium text-gray-700 ">Title</label>
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="border border-gray-300 rounded p-2 w-full text-sm"
+            className="border border-gray-300 rounded p-2 w-full text-sm "
           />
         </div>
         <div>
