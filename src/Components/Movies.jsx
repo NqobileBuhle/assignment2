@@ -21,7 +21,7 @@ const Movies = ({isHome= false}) => {
         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6'>
           {/* Display movies up to the visibleCount */}
           {movies.slice(0, visibleCount).map((movie) => (
-            <div key={movie.id} className="w-64  h-55  max-w-xs">
+            <div key={movie.id} className="md:w-64  md:h-55  max-w-xs">
               <Link to={`/movies/${movie.id}`}>
                 <img className="w-full h-full object-cover" src={movie.image} alt={movie.title} />
               </Link>
