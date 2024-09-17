@@ -29,8 +29,8 @@ function MoviesPage() {
   };
   
   return (
-    <div className="flex justify-end items-center  md:flex-row p-4 md:p-8">
-      <div className="flex flex-row items-start space-x-8 ml-auto">
+    <div className="p-4 md:p-8">
+      <div className="flex md:flex-row flex-col justify-center items-center space-x-8">
         <img 
           src={movie.image} 
           alt={movie.title} 
@@ -38,9 +38,9 @@ function MoviesPage() {
         />
         <div className="flex flex-col">
           <h1 className="text-4xl mb-4">{movie.title}</h1>
-          <p className="text-lg mb-4">{movie.description}</p>
-          <p className="text-lg mb-2"><strong>Year:</strong> {movie.year}</p>
-          <p className="text-lg mb-2"><strong>Country:</strong> {movie.country}</p>
+          <p className="text-lg mb-4 max-w-[500px]">{movie.description}</p>
+          <p className="text-lg mb-2"><strong>Year:</strong> {movie.Year}</p>
+          <p className="text-lg mb-2"><strong>Country:</strong> {movie.Country}</p>
           <div className="mt-4 flex space-x-4">
             <button
               onClick={handleEdit}

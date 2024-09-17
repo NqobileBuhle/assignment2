@@ -7,6 +7,7 @@ const EditMovie = () => {
   const navigate = useNavigate();
 
   const movie = streams.movies.find(m => m.id === parseInt(movieId));
+  
 
   // State for movie details
   const [title, setTitle] = useState('');
@@ -42,7 +43,7 @@ const EditMovie = () => {
     navigate(`/movies/${movieId}`);
   };
 
-  if (!movie) return <div>Loading...</div>;
+   if (!movie) return <div>Loading...</div>;
 
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">

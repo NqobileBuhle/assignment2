@@ -7,7 +7,7 @@ function SeriesPage() {
   const navigate = useNavigate();
   
   // Find the series by ID
-  const series = streams.Series.find(s => s.id === parseInt(seriesId, 10));
+  const series = streams.series.find(s => s.id === parseInt(seriesId, 10));
   
   // Handle series not found
   if (!series) {
@@ -32,8 +32,8 @@ function SeriesPage() {
   };
   
   return (
-    <div className="flex justify-end items-center md:flex-row p-4 md:p-8">
-      <div className="flex flex-row items-start space-x-8 ml-auto">
+    <div className="p-4 md:p-8">
+      <div className="flex md:flex-row flex-col justify-center items-center space-x-8">
         <img 
           src={series.image} 
           alt={series.title} 
@@ -41,9 +41,9 @@ function SeriesPage() {
         />
         <div className="flex flex-col">
           <h1 className="text-4xl mb-4">{series.title}</h1>
-          <p className="text-lg mb-4">{series.description}</p>
-          <p className="text-lg mb-2"><strong>Year:</strong> {series.year}</p>
-          <p className="text-lg mb-2"><strong>Country:</strong> {series.country}</p>
+          <p className="text-lg mb-4 max-w-[500px]">{series.description}</p>
+          <p className="text-lg mb-2"><strong>Year:</strong> {series.Year}</p>
+          <p className="text-lg mb-2"><strong>Country:</strong> {series.Country}</p>
           <div className="mt-4 flex space-x-4">
             <button
               onClick={handleEdit}

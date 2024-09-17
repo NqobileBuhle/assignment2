@@ -8,7 +8,7 @@ const MainLayout = () => {
   return (
     <div>
       <Navbar />
-      <AddButton /> {/* Include AddButton here */}
+      
       <Outlet />
       <Footer />
     </div>

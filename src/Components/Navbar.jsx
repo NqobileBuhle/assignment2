@@ -12,7 +12,8 @@ const Navbar = () => {
     '/movies': 'LATEST MOVIES',
     '/series': 'LATEST SERIES',
     '/add': 'ADD MOVIE/SERIES',
-    '/editmovie': 'EDIT MOVIE'
+    '/editmovie': 'EDIT MOVIE',
+    '/': ''
   };
 
   // Get the title based on the current path

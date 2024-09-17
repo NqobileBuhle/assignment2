@@ -3,8 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import streams from '../streams.json';
 
 const Edit = () => {
-  const { id } = useParams();
-  const [item, setItem] = useState(null);
+  const { seriesId  } = useParams();  // get the id from URL
+  const [item, setItem] = useState(null);  // initial state for the series to edit
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [country, setCountry] = useState('');
@@ -14,36 +14,38 @@ const Edit = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Find the item by id from streams
-    const foundItem = [...streams.movies, ...streams.Series].find(item => item.id === parseInt(id));
+    const foundItem = streams.series.find(item => item.id === parseInt(seriesId, 10));
+    
+    console.log('ID from Params:', seriesId);
+    console.log('Found Item:', foundItem);
+  
     if (foundItem) {
       setItem(foundItem);
-      setTitle(foundItem.title);
-      setDescription(foundItem.description);
-      setCountry(foundItem.country);
-      setYear(foundItem.year);
-      setType(foundItem.type);
-      setImage(foundItem.image);
+      setTitle(foundItem.title || '');
+      setDescription(foundItem.description || '');
+      setCountry(foundItem.Country || '');
+      setYear(foundItem.Year || '');
+      setType(foundItem.Type || '');
+      setImage(foundItem.image || '');
     }
-  }, [id]);
+  }, [seriesId]);
+  
+    // only run when the id changes
 
+  // Handle Update Submission
   const handleUpdate = (e) => {
     e.preventDefault();
-    // Implement update functionality
-    const updatedItem = {
-      id: parseInt(id),
-      title,
-      description,
-      country,
-      year,
-      type,
-      image,
-    };
-    // Assuming you have a way to update the data source
-    // e.g., a function or API call to save the updated item
-    console.log('Updated item:', updatedItem);
-    alert('Update not implemented');
-    navigate(`/details/${id}`);
+    if (!title || !description || !country || !year || !type) {
+      alert('Please fill in all fields');
+      return;
+    }
+
+    const updatedSeries = { id: item.id, title, description, country, year, type, image };
+
+    // Implement update functionality (you may want to use API or state here)
+    console.log('Updated series:', updatedSeries);
+    alert('Series updated successfully');
+    navigate(`/series/${seriesId}`);
   };
 
   const convertImage = (e) => {
@@ -59,92 +61,105 @@ const Edit = () => {
     }
   };
 
-  if (!item) return <div>Loading...</div>;
+  // If no item is found or data is still loading
+  // if (!item) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
-    <section className="p-2 justify-center items-center">
-      <h2 className="text-2xl font-semibold mb-4">Edit {item.title}</h2>
-      <form onSubmit={handleUpdate} className="space-y-4">
+    <div className="flex justify-center items-center h-screen bg-gray-100">
+      <form onSubmit={handleUpdate} className="p-8 space-y-4 bg-white shadow-md rounded max-w-md mx-auto w-full">
         <div>
-          <label className="block text-sm font-medium text-gray-700 ">Title</label>
+          <label className="block text-sm font-medium text-gray-700">Movie/Series Name</label>
           <input
             type="text"
+            className="border border-gray-300 rounded p-2 w-full text-sm"
+            placeholder="Enter movie/series name"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="border border-gray-300 rounded p-2 w-full text-sm "
           />
         </div>
+
         <div>
           <label className="block text-sm font-medium text-gray-700">Description</label>
           <textarea
+            className="border border-gray-300 rounded p-2 w-full h-20 text-sm"
+            placeholder="Movie/series description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            className="border border-gray-300 rounded p-2 w-full h-20 text-sm"
-          />
+          ></textarea>
         </div>
+
         <div>
           <label className="block text-sm font-medium text-gray-700">Country</label>
           <input
             type="text"
+            className="border border-gray-300 rounded p-2 w-full text-sm"
+            placeholder="Enter country"
             value={country}
             onChange={(e) => setCountry(e.target.value)}
-            className="border border-gray-300 rounded p-2 w-full text-sm"
           />
         </div>
+
         <div>
           <label className="block text-sm font-medium text-gray-700">Year</label>
           <input
             type="text"
+            className="border border-gray-300 rounded p-2 w-full text-sm"
+            placeholder="Enter year"
             value={year}
             onChange={(e) => setYear(e.target.value)}
-            className="border border-gray-300 rounded p-2 w-full text-sm"
           />
         </div>
+
         <div>
-          <label className="block text-sm font-medium text-gray-700">Type</label>
+          <label className="block text-sm font-medium text-gray-700">Image URL</label>
+          <input
+            type="text"
+            className="border border-gray-300 rounded p-2 w-full text-sm"
+            placeholder="Enter image URL"
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+          />
+          {image && <img src={image} alt="Preview" className="w-64 h-64 object-cover mt-4 mx-auto" />}
+        </div>
+
+        <fieldset>
           <div className="flex space-x-4 items-center">
             <input
               type="radio"
               id="movie"
               name="type"
               value="movie"
-              checked={type === "movie"}
-              onChange={(e) => setType(e.target.value)}
               className="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+              checked={type === 'movie'}
+              onChange={(e) => setType(e.target.value)}
             />
             <label htmlFor="movie" className="text-sm text-gray-700">Movie</label>
+
             <input
               type="radio"
               id="series"
               name="type"
               value="series"
-              checked={type === "series"}
+              checked={type === 'series'}
               onChange={(e) => setType(e.target.value)}
               className="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
             />
             <label htmlFor="series" className="text-sm text-gray-700">Series</label>
           </div>
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700">Image</label>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={convertImage}
-            className="border border-gray-300 rounded p-2 w-full text-sm"
-          />
-          {image && <img src={image} alt="Preview" className="w-64 h-55 object-cover mt-4" />}
-        </div>
+        </fieldset>
+
         <div>
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full"
+            className="bg-indigo-500 hover:bg-indigo-600 rounded-full text-white w-full h-10 text-sm"
           >
-            Update
+            SAVE
           </button>
         </div>
       </form>
-    </section>
+    </div>
   );
 };
 
