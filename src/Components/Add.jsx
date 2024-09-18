@@ -40,12 +40,12 @@ function Add({ submitMovies }) {
   }
 
   return (
-    <div className="flex flex-col  items-center p-4 md:p-8 bg-gray-100">
+    <div className="flex flex-row space-x-9  mx-auto items-center p-4 md:p-8 bg-gray-100">
       <input
         type="file"
         accept="image/*"
         onChange={convertImage}
-        className="mb-4 w-full max-w-xs rounded border border-gray-300 p-2 shadow-lg"
+        className="mb-4 w-full ml-56  max-w-xs rounded border border-gray-300 p-2 shadow-lg"
       />
 
       {image && <img src={image} alt="Preview" className="w-full max-w-xs h-auto mb-4 object-cover rounded shadow-md" />}

@@ -4,17 +4,17 @@
     {
         "id": 1,
         "title": "Avengers",
-        "description": "After the devastating events of Avengers:Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+        "description": "The remaining Avengers must come together to reverse the chaos unleashed by Thanos in 'Infinity War.' This epic finale tests the heroes' resolve and unity as they attempt to restore balance to the universe.",
         "image": "https://s3-alpha-sig.figma.com/img/b8b0/0ade/94e77422367f49e37fa75e1317791dca?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=L0VXcHgrATUNE3FS-7El~AZfR7lMLMQaHEfznOXpsoCX91A8VbSCcE4bmO0-xexnrh47ZcSXvDglA5fcFgSzc318xTADtn9h439MuKHgPkBvQ4K36f6OtxWuvOsj5WRVxM7hp6Nrw-G2OkDqWAWvCgyzdE9KbptT8caGHBiSeBeKfblzSJhJBb59YbULxtiJDr-qiBTZdvb9Sbevgnn2W5fXQQ28d-5wa82hYjDu7d~rjVXDN-4o3qtFYlgJSpdqc5QRioXxdsGt8dOZRoreqhbGFGHll5o6Cc~anZUswfEkyjpyd4169bt5sIqx~EcgLPt9DIkdnMBIXZqUpnbVhQ__",
         "Country": "USA",
         "Year": "2019",
         "Type": "Movie",
-        "Genre":"Action,Adventure,Science Fiction"
+        "Genre":"Action, Adventure, Science Fiction"
     },
     {
         "id": 2,
         "title": "A Hidden Life,",
-        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+        "description": "Based on real events, this film tells the story of an Austrian farmer who refuses to fight for the Nazis during World War II, showcasing the moral complexities of standing up against tyranny.",
         "image": "https://s3-alpha-sig.figma.com/img/7f49/54fe/6d4c96ab9f00ea2cdbf89da5308c125d?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=G218ZE~i80KSUtjMgBjdwe9murPbCyKqh1VNiQNcxP-DY-hxOrpCx6~zUNihHb8wCHIAH6tiC8qdDXXAbW~WVp2GV3eLtvbwvb5nDgu5hBJKUmZVAvJGvqCZrZKgaVe466fBy6PN2E3vDKntNCqUINFRcM9XyI7qR7jjcKLwoYLE~jC-0CPxT~1-iLFp7oq-ZzQAnl8ZmIgzC87gXtPKJdySgHoQl~~yQajyP8Zu47AEHPV1Hx~Jq-RZJSW9di1bq9R84nZUzv1NbkVY4RXmSbBSx~algRt5KpRl7kkhQVmLNCru36t4bTwgDCnPpi2yF5uxJKncTOo72L9x2JAW3g__",
         "Country": "United Arab Emirates",
         "Year": "2019",
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "title": "The Death of Dick Long",
-        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+        "description":"After the sudden death of their friend, two small-town bandmates are left scrambling to hide the body and the circumstances behind his demise, leading to a wild and darkly comedic misadventure.",
         "image": "https://s3-alpha-sig.figma.com/img/986e/294c/a3037a374def606ed6454a74219ceca0?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F67JAsB-G1fyJUOMd1nF5QM6znwuEtOuiHz9gKMMn-lp-PaIuEf1h3X0IOI91LWXl~MqcT13JVo4QyLzJUdoo2E83fv6o~GF-b79j~rlCvpYn7v9YoKgn6ShHbBEDfeVbqgUBAJUxmBci7luXJBTZE8eMBj92lmq0bnoWstjO1X-P8L-dKIUNRs6X~~QBAXwBOqW6g7WuXLA710Rz4bevhYtsaLx0EQTYTmSDwWMPuX51Z1qYyJMM9gbLD7nr4OtwM~ebGyJJw-e-TRT18stH48eTpVg3cC2yrTvS4yLvsd1jX9aNGCQs~h7bUeEYKQzttdSoD0sXKo9TjmpTC~UtQ__",
         "Country": "USA",
         "Year": "2019",
@@ -34,7 +34,7 @@
     {
         "id": 4,
         "title": "The Nightingale",
-        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+        "description":  "Set in 1825, a young Irish convict woman seeks revenge against a British officer who wronged her family, in this harrowing tale of survival and justice set in the Tasmanian wilderness.",
         "image": "https://s3-alpha-sig.figma.com/img/c0b0/2ef5/8af2d6b596514ffe22dbbbbce3cd382c?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RUaQ8YdliRAVV24KIbUb-NhKmc8WjwzHn7hI-gPFhLLlEc42F-XcAjNnqhg4syZTIwWoHeyT61YqA7kSuDCSeY5ZEpGqE3mhNcdWwJN~iF5tqVJd5tCM3mKp8ADXd8qN9bwuFzCn~WQH~sebPQ6QPhFF6lWhtrfFwIgY~oXtso6gN7l20HRA~sbOPpaJNYvRW7lpSClrPyMl7G1gbBwEgV8AfLZ2XcoZZHZcwe55kgu3Ie9R~VVXuLbWIN0Px8DXzqlQESxOVHroEWF9-XTlW09eU2xt7dJvKK6d9MP42QPvPEhaFJrFIoF-vjFHD2b9F5f8WwkRsPCa8YtoOjqU-g__",
         "Country": "USA",
         "Year": "2019",
@@ -44,7 +44,7 @@
     {
         "id": 5,
         "title": "Joker",
-        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+        "description":"Arthur Fleck, a struggling stand-up comedian with mental health issues, descends into madness and becomes the iconic villain known as the Joker, as Gotham spirals into chaos.",
         "image": "https://s3-alpha-sig.figma.com/img/83cd/9e19/cb511b5660566afd71c19dd923e899f3?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eUyc08n-nyRvkowrHKapy2r7lTfuk5~B6UFIG32pr3Fbq8VzzMThO829bpUmi6V05VM04uHu6~6L8c8KiKxhQsShi7dCe-0ysKvCd1HPRNQT0PDt~H3S~MSZH9sXHfADyPQj~DQL1EEWCzP87IFAH1Iy9uaX2nKnyz8fbDo~8fMlEpKyB-fandNVtNHWRiH-AR7md~9CN3Kl1wLmpckNOizua5G5ZyU7t3mS2JImS41jcFTlgVY2XesVPKVPwIUFj7v1DWx1a51PLASaQlwiqef5natUrRaYwtp3CBWBcYYTRc2KP9xHO1-JmGSnFyhlEtqu6GSciyS0Eq5w0Rsrfg__",
         "Country": "USA",
         "Year": "2019",
@@ -55,7 +55,7 @@
     {
         "id": 6,
         "title": "Wonder Woman",
-        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+        "description": "Diana Prince faces off against a wealthy businessman and a former friend who have been granted dangerous, supernatural abilities in this colorful and action-packed 1980s superhero tale.",
         "image": "https://s3-alpha-sig.figma.com/img/8423/126f/cf7fcb8e059f7caca9c0b2a78f2a6242?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ewIeK74udcFrnU6bj1noFZziOBgRRhauHtDmlh6QhjJ24yMVaHXlOAGoFMM8QguwKYbdRubMM94xTXw3JlVJgKJRkjX1RoFv4N4SKu8-GjEMtEpVvFNEBYEdGdpajtv2SAnZiPprpX4glO5k7nw9Bu-OtccvFFaUYmTr3NbtC0sPlxqi5GFXjwCIjHsqR0VvwoFZJZHgvikvv9LADSGLiBAbliCllmfEY0CN754DpwNcyN5mX90Kavvf5RJtJ~dNMnnkFEBJqi1CON6XNPUqOnN19HPj-pYdwEcBaDKgVLE6Ko6kSjomVtFKPLIg9U2SlX8ytSlSEJPF9ZF0NHonlg__",
         "Country": "USA",
         "Year": "2019",
@@ -65,22 +65,22 @@
     {
         "id": 7,
         "title": "John-Wick-Chapter-three",
-        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+        "description": "Legendary assassin John Wick is on the run after a $14 million bounty is placed on his head, forcing him to fight for his life against the world's deadliest killers.",
         "image": "https://s3-alpha-sig.figma.com/img/baa7/37b2/0fcadd58fb9d6fceded1d59ffab0aa8c?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I4ggDc9VT0u6z6Whi9FznUW2sBA4wsPKeU9ZCNfMofmqyYmAKy~RXeEhYv3Iy6nenK7gSi6BlhSFxaeLIiET-jGpJJEkX-n2B~VnWxouHsqc4O5Ae7YDCwGz--okekBP1SaGVg3MCe0lMCboLGuth3P-jIkaIymxS30eb1n6XBmeoWw8PFB-brmVwWG~qn5a9lYfrcAba~tGAz~kn18F7qE1tEYNfEEndfrVGn8yHlQfAwVPiK8lheY5Z98IWlWyG5dZi698Ui6xxa68tmgEdSZWIsU8z6DZhGglLiRFkL5uYHLsqMWpkaDudV~vZRWSPc-pLk8qcUqfWY-JQ8ks6Q__",
         "Country": "USA",
         "Year": "2019",
         "Type": "Movie",
-        "Genre":"Action,Adventure,Science Fiction"
+        "Genre":"Action, Thriller, Crime"
     },
     {
         "id": 8,
         "title": "Us-1",
-        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+        "description": "A family on vacation is terrorized by a group of doppelgängers who are intent on destroying them, leading to a tense and terrifying confrontation.",
         "image": "https://s3-alpha-sig.figma.com/img/69e1/711b/2f91b56078b3f51981e02a420def8e80?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=URfW8bi6ZP0IDj6lxXKzI3EsSrFfIDNEYrr9Ni5xEKV1K-KIrtLw9IihgiQqK5UtVGKhg-Kr7lQwW4OUu~CukRb50miN9PyPggNNqG~fI3t7N5kJuR6yT~Fb3mvlAdgExAYMgXJ7nMZ6LqHFUB0nqIh519aKBvWZ3mY7Iw8yfdXf1uzVQPBfknETnNSsPhGoIWK0D2QRg1X-XgDOktK2rebS36azBFaM91inqSo~M3YiwSI-plUkB9pMH80jt9vi-~lT-PU9NixXESa61reSc6rAIZaKx9wEUDCoLI8ilbQdDXtGaPHCbzeKpubBWEDnmfCs2Ugjx-cjKrE7qzpdtw__",
         "Country": "USA",
         "Year": "2019",
         "Type": "Movie",
-        "Genre":"Action,Adventure,Science Fiction"
+        "Genre":"Horror, Thriller, Mystery"
     }
 
     ],
@@ -91,7 +91,7 @@
     {
         "id": 9,
         "title": "Wednesday",
-        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+        "description": "Wednesday Addams, a gifted teen with a fascination for the macabre, navigates life at a unique boarding school while investigating a supernatural mystery that involves her family’s past.",
         "image":"https://s3-alpha-sig.figma.com/img/cd1b/c9bd/89b2f1e56b1b38f1ee75dfebc6295b91?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fwwYyjP-H4cMjxwG2qmkO2LAtl7rv7QxJTjsgmAL-09eYewdXe07sU583LOqG2zw8O2Edbp8hg61mGUcDS~InQDayeth-5dGAe78YegSd3EQYxgvgoN7Rj8t4rwFSUxQ8WnbDd8qMqE6bbiH9XYcF8~Dt0dqJaHuYCbZJ1w5BDVwZOR7du8WsEU1fgGkKz30eHTGLq6WL8ur~R9STJQZdx54ByQUero81BMDbeHo56C3G~ok4MgvCndFmXSIpoC3mTsQ96AIUeM3G9NlMC1U~~fjVBW3hk9hLcKjG-FbjXSvgJ5yH2eCcNe6IQyPGfWrLR4IVqroxxu-bPRVpoWNNg__",
         "Country": "USA",
         "Year": "2019",
